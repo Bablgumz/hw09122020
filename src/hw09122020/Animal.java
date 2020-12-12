@@ -55,37 +55,3 @@ public class Animal {
         animalCount++;
     }
     }
-
-    public class Cat extends Animal {
-    private static int animalCount;
-
-    private static int MAX_RUN = 200;
-    private static int MAX_JUMP = 2;
-    private static int MAX_SWIM = 0;
-
-    public Cat(String name) {
-        super("Кот", name, MAX_RUN,MAX_JUMP,MAX_SWIM);
-        animalCount++;
-    }
-
-    public static int getAnimalCount() {
-        return animalCount;
-    }
-
-    public class Dog extends Animal {
-        private static int animalCount;
-
-        private static int MAX_RUN = 1000;
-        private static int MAX_JUMP = 1;
-        private static int MAX_SWIM = 0;
-
-        public Cat(String name) {
-            super("Собака", name, MAX_RUN,MAX_JUMP,MAX_SWIM);
-            animalCount++;
-        }
-
-        public static int getAnimalCount() {
-            return animalCount;
-    }
-    }
-}
